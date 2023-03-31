@@ -1,0 +1,15 @@
+# macOS
+.DS_Store
+
+# Node.js
+node_modules/
+
+# Truffle
+build/
+dist/
+.history/
+.tmp/
+*.log
+
+# Other
+.env
