@@ -24,7 +24,7 @@ To run the tests for the `Boomerang` smart contract, follow these steps:
 
 1. Start Ganache CLI by running the following command:
 
-```ganache-cli```
+```npx ganache-cli```
 
 2. In a separate terminal window, compile and migrate the smart contract by running the following commands:
 

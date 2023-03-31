@@ -10,9 +10,14 @@
     "test": "truffle test"
   },
   "dependencies": {
-    "@openzeppelin/contracts": "^4.4.1"
+    "@openzeppelin/contracts": "^4.4.1",
+    "@truffle/hdwallet-provider": "^2.1.9",
+    "dotenv": "^10.0.0",
+    "web3": "^0.20.7",
+    "ws": "^7.5.3"
   },
   "devDependencies": {
+    "@openzeppelin/test-helpers": "^0.5.16",
     "ganache-cli": "^6.12.2",
     "truffle": "^5.1.65"
   },

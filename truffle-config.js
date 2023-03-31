@@ -6,7 +6,8 @@ module.exports = {
     development: {
       host: "127.0.0.1",
       port: 8545,
-      network_id: "*"
+      network_id: "*",
+      serial: true, // run tests in a single thread
     },
     ropsten: {
       provider: function() {
