@@ -18,6 +18,14 @@ To run the tests for this smart contract, you will need to have the following to
 2. Navigate to the root of the repository.
 3. Run `npm install` to install the project dependencies.
 
+
+Notes, use 
+
+```
+nvm use 18.15.0  --lts 
+```
+
+
 ### Running the Tests
 
 To run the tests for the `Boomerang` smart contract, follow these steps:
@@ -29,13 +37,15 @@ To run the tests for the `Boomerang` smart contract, follow these steps:
 2. In a separate terminal window, compile and migrate the smart contract by running the following commands:
 
 ```
-truffle compile
-truffle migrate
+npx truffle compile
+npx truffle migrate
 ```
 
 3. Run the tests by running the following command:
 
-truffle test
+```
+npx truffle test
+```
 
 ### Deploying to Testnet/Mainnet
 
