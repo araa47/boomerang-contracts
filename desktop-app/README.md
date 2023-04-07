@@ -9,11 +9,14 @@
 ```
 pip install -r requirements.txt
 ```
-4. Run the app by executing the following command:
+4. Run either the encrytor or decryptor by going into the `boomerang-app` folder and running 
 ```
-python app.py
+python encrypt.py 
 ```
-
+or 
+```
+python decrypt.py 
+```
 ## Packaging the app
 
 1. Run the command 
