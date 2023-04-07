@@ -4,6 +4,13 @@ This is the frontend for the Boomerang dApp.
 
 ## Setup
 
+Notes, use 
+
+```
+nvm use 15.14.0
+```
+
+
 To run the frontend, first install the dependencies:
 ```
 npm install
