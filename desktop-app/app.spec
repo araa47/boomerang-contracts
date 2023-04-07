@@ -28,7 +28,7 @@ exe = EXE(
     a.zipfiles,
     a.datas,
     [],
-    name='boomerang',
+    name='app',
     debug=False,
     bootloader_ignore_signals=False,
     strip=False,
@@ -44,7 +44,7 @@ exe = EXE(
 )
 app = BUNDLE(
     exe,
-    name='boomerang.app',
+    name='app.app',
     icon=None,
     bundle_identifier=None,
 )

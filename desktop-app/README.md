@@ -14,3 +14,12 @@ pip install -r requirements.txt
 python app.py
 ```
 
+## Packaging the app
+
+1. Run the command 
+
+```
+pyinstaller --onefile --windowed  app.py
+```
+this will create an exe an app file in the dist directory that you can double click to launch 
+
