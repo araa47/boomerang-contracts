@@ -1,6 +1,7 @@
 const HDWalletProvider = require('@truffle/hdwallet-provider');
 const Web3 = require('web3');
 const { abi, bytecode } = require('../build/contracts/Boomerang.json');
+require('dotenv').config();
 
 const MNEMONIC = process.env.MNEMONIC;
 console.log(MNEMONIC)

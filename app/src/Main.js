@@ -5,6 +5,9 @@ import { Button, Container, TextField, Typography } from '@material-ui/core';
 import { ethers } from 'ethers';
 import { abi } from './Boomerang.json';
 import './styles/Main.css';
+
+require('dotenv').config();
+
 const updateFrequency = 1; // seconds
 
 const formatDuration = (seconds) => {

@@ -47,6 +47,37 @@ npx truffle migrate
 npx truffle test
 ```
 
+### Deploying to local devnet 
+
+1. Start Ganache CLI by running the following command:
+
+
+```npx ganache-cli```
+
+Let this terminal run, note down the mnemonic 
+
+2. Copy the .env.example file to a new file called .env
+
+3. Set the mnemonic from the output of step 1 , make sure to set it between "apple banana ..."
+
+4. Make sure you have built the contract
+
+```
+npx truffle compile
+
+```
+5. Deploy
+
+```node scripts/deploy.js```
+
+6. Node the contract address and update .env file 
+
+7. Now deploy two random boomerangs. 
+
+```node scripts/boom.js```
+
+8. Now you are ready to go launch the frontend, go to app dir and follow readme
+
 ### Deploying to Testnet/Mainnet
 
 To deploy the `Boomerang` smart contract to a testnet or mainnet, you will need to update the `truffle-config.js` file with the appropriate configuration settings for your network of choice.
