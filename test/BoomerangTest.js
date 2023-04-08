@@ -107,4 +107,25 @@ contract("Boomerang", accounts => {
         assert.equal(isUnlockedNow, true);
         await stateSnapShot.restore()
     });
+
+    it("should be locked if a Boomerang is not updated enough times", async () => {
+        const expiryTime = Math.floor(Date.now() / 1000) + time.duration.weeks(10).toNumber(); // 10 weeks from now
+        const updateFrequency = time.duration.weeks(1).toNumber(); // 1 week
+        await boomerangInstance.createBoomerang(expiryTime, updateFrequency);
+      
+        // Not expired right after creation
+        const isUnlocked = await boomerangInstance.isUnlocked(0);
+        assert.equal(isUnlocked, false);
+      
+        // Update the Boomerang every week 9 times
+        for (let i = 0; i < 9; i++) {
+            await boomerangInstance.checkIn(0);
+            await time.increase(time.duration.weeks(1));
+        }
+      
+        // Check that the Boomerang is still locked as it isn't expired
+        const isUnlockedNow = await boomerangInstance.isUnlocked(0);
+        assert.equal(isUnlockedNow, false);
+        await stateSnapShot.restore()
+      });
 });
