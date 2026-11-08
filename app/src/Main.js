@@ -3,10 +3,10 @@ import { useWeb3React } from '@web3-react/core';
 import { makeStyles } from '@material-ui/core/styles';
 import { Button, Container, TextField, Typography } from '@material-ui/core';
 import { ethers } from 'ethers';
-import { abi } from './Boomerang.json';
+import Boomerang from './Boomerang.json';
 import './styles/Main.css';
 
-require('dotenv').config();
+const { abi } = Boomerang;
 
 const updateFrequency = 1; // seconds
 
