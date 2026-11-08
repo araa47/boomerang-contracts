@@ -1,6 +1,8 @@
 import React, { useState, useEffect } from "react";
 import Web3 from "web3";
-import { abi } from "../Boomerang.json";
+import Boomerang from "../Boomerang.json";
+
+const { abi } = Boomerang;
 
 const BoomerangList = () => {
   const [boomerangs, setBoomerangs] = useState([]);
